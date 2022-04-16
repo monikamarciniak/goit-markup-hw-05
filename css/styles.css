@@ -718,7 +718,7 @@ text-align: left;
 
 /*===BACKDROP===*/
 
-/* .backdrop {
+.backdrop {
     position:fixed;
     left: 0;
     top: 0;
@@ -726,8 +726,8 @@ text-align: left;
     height: 100%;
     background: #00000033;
     
-}
-    
+}  
+   
 .modal {
     position: absolute;
     top: 50%;
@@ -736,6 +736,9 @@ text-align: left;
     width: 528px;
     min-height: 581px;
     background-color: var(--third-color);
+
+    transform: translate(100px, 200px);
+    
 }
 
 .close-btn {
@@ -749,12 +752,12 @@ text-align: left;
     border-radius: 50%;
     cursor: pointer;
 }
-
+ 
 .is-hiden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-} */
+}
 
 
 /*===END BACKDROP===*/

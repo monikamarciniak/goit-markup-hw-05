@@ -735,10 +735,7 @@ text-align: left;
     transform: translate(-50%, -50%);
     width: 528px;
     min-height: 581px;
-    background-color: var(--third-color);
-
-    transform: translate(100px, 200px);
-    
+    background-color: var(--third-color);    
 }
 
 .close-btn {

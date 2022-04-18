@@ -103,14 +103,30 @@ margin-right: 93px;
     padding-right: 46px;
 }
 
+.nav-list-item:active {
+    color: var(--hover-color);
+}
+
 .nav-list-link {
     color: var(--main-color);
 }
 
-.nav-list-link:active::after {
+/* .nav-list-link:active::after {
     color: var(--hover-color);
     content: "";
-    display: none;
+    display: none; 
+}*/
+
+.current .nav-list-link::after {
+    position: relative;
+    top: 38px;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--hover-color);
+    color: var(--hover-color);
 }
 
 .contact-mail,

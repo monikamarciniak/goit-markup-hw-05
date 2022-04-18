@@ -33,6 +33,8 @@ p {
 }
 img {
     display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -274,23 +276,27 @@ color: var(--secondary-color);
 .what-we-do .container {
     display: flex;
     align-items: center;
+    width: 1200px;
 }
 
 .what-we-do-list {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .what-we-do-item {
-    padding-right: 30px;
     padding-bottom: 94px;
 }
+
+.what-we-do-item:not(:last child) {
+    padding-right: 30px;
+}
+
 .what-we-do-title {
 font-size: 36px;
 font-weight: 700;
 line-height: 1.167;
 letter-spacing: 0.03em;
-
-
 text-align: center;
 padding-top: 94px;
 padding-bottom: 50px;
@@ -301,21 +307,22 @@ align-items: center;
     display: flex;
     position: relative;
     overflow: hidden;
+    padding-right: 30px;
 }
 
 .what-we-do-box > .label {
 position: absolute;
-
+left: 0;
+bottom: 0; 
+right: 0;
+margin: 0;
 }
 
 .label {
-    height: 70px;
-    width: 370px; 
-    justify-content: center;
-    align-items: center;
+height: 70px;
+    width: 370px;
     display: flex;
-    margin: 0 auto;
-    background-color:rgba(47, 48, 58, 0.8);
+    background: #2F303ACC;
     font-size: 14px;
 font-weight: 700;
 line-height: 1.128;
@@ -324,6 +331,7 @@ text-align: center;
 justify-content: center;
 align-items: center;
 color: var(--third-color);
+margin: 0 auto;
 }
 
 /*===END WHAT WE DO===*/
@@ -579,14 +587,14 @@ padding: 49px 45px 49px 24px;
 margin: 0 auto;
 }
 
-  .portfolio-project-card:hover .overlay {
+  .portfolio-project-card:hover > .overlay {
     transform: translateY(0);
   }
 
-  /* .portfolio-project-card:hover > .overlay {
+  .portfolio-project-card:hover > .overlay {
      position: absolute;
     top: 0;
-} */
+}
 
 .portfolio-project-title {
     /* position: absolute; */

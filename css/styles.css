@@ -587,7 +587,7 @@ padding: 49px 45px 49px 24px;
 margin: 0 auto;
 }
 
-  .portfolio-project-card:hover > .overlay {
+  .portfolio-project-card:hover  .overlay {
     transform: translateY(0);
   }
 

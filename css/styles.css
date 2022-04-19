@@ -304,28 +304,24 @@ align-items: center;
 }
 
 .what-we-do-box {
-    display: flex;
+    /* display: flex; */
     position: relative;
     overflow: hidden;
     padding-right: 30px;
 }
 
-.what-we-do-box > .label {
-position: absolute;
-left: 0;
-bottom: 0; 
-right: 0;
-margin: 0;
-}
 
 .label {
+    display: block;
+    position: absolute;
+    top: 215px;
 height: 70px;
-    width: 370px;
-    display: flex;
-    background: #2F303ACC;
+    width: 360px;
+    
+    background: #2f303a84;
     font-size: 14px;
 font-weight: 700;
-line-height: 1.128;
+line-height: 70px;
 letter-spacing: 0.03em;
 text-align: center;
 justify-content: center;
@@ -333,6 +329,14 @@ align-items: center;
 color: var(--third-color);
 margin: 0 auto;
 }
+
+/* .what-we-do-box>.label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+} */
 
 /*===END WHAT WE DO===*/
 
@@ -453,10 +457,10 @@ padding-bottom: 50px;
 }
 
 .client-box {
-    border: 1px solid #AFB1B8;
+    /* border: 1px solid #AFB1B8; */
     width: 170px;
     height: 92px;
-    margin-right: 30px;
+    margin-right: 30px; 
 }
 
 .clients-list {
@@ -467,7 +471,31 @@ padding-bottom: 50px;
 }
 
 .clients-list-item {
+    position: relative;
     padding: 16px 32px; 
+}
+
+/* Marcin napisał  */
+.client-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid var(--icon-color);
+    width: 170px;
+    height: 92px;
+    margin-right: 30px;
+}
+
+.client-list-link:hover,
+.client-list-link:hover .clients-icon,
+.client-list-link:focus
+.clients-icon:hover,
+.clients-icon:focus {
+    border-color: var(--hover-color);
+    fill: var(--hover-color);
 }
 
 .clients-icon {
@@ -568,6 +596,7 @@ top: 696px;
  .overlay {
     overflow: hidden;
     position: relative;
+    text-align: center;
     /* height: 294px;
     width: 370px;
     background-color: #2196F3E5;
@@ -584,7 +613,8 @@ top: 696px;
     width: 100%;
     height: 100%;
     transform: translateY(100%);
-    background-color: var(--hover-color);
+    /* background-color: var(--hover-color); */
+    background-color: white;
     transition: 250ms;
     transition-timing-function: (0.4, 0, 0.2, 1);
 font-size: 18px;
@@ -597,8 +627,9 @@ padding: 49px 45px 49px 24px;
 margin: 0 auto;
 }
 
-.overlay:hover .overlay-description {
+.portfolio-project-item:hover .overlay-description {
     transform: translateY(0);
+    background-color: var(--hover-color);
 }
 
 
@@ -625,6 +656,11 @@ color: var(--secondary-color);
 .portfolio-project-title,
 .portfolio-project-subtitle {
     padding-left: 24px;
+}
+
+.portfolio-project-item{
+    display: flex;
+    flex-direction: column;
 }
 
 /*===END PORTFOLIO===*/

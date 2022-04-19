@@ -155,15 +155,18 @@ margin-right: 93px;
 .contact-mail:hover .contact-logo,
 .contact-mail:focus, 
 .contact-phone-number:hover,
-.contact-phone-number:focus {
+.contact-phone-number:hover .contact-logo,
+.contact-phone-number:focus,
+.contact-logo:hover,
+.contact-logo:focus {
     color: var(--hover-color);
     fill: var(--hover-color);
 }
 
-.contact-logo:hover,
+/* .contact-logo:hover,
 .contact-logo:focus {
     fill: var(--hover-color);
-}
+} */
 /*===END MENU===*/
 
 /*===HEADER===*/
@@ -218,7 +221,6 @@ margin-bottom: 40px;
     box-shadow: 0px 4px  rgba(0, 0, 0, 0.15);
     border-style: none;
 
-    /* transition: all 250ms linear; */
 }
 
 /*===END HEADER===*/
@@ -315,10 +317,10 @@ align-items: center;
     display: block;
     position: absolute;
     top: 215px;
-height: 70px;
+    height: 70px;
     width: 360px;
     
-    background: #2f303a84;
+    background: #2F303ACC;
     font-size: 14px;
 font-weight: 700;
 line-height: 70px;
@@ -457,7 +459,6 @@ padding-bottom: 50px;
 }
 
 .client-box {
-    /* border: 1px solid #AFB1B8; */
     width: 170px;
     height: 92px;
     margin-right: 30px; 
@@ -475,7 +476,6 @@ padding-bottom: 50px;
     padding: 16px 32px; 
 }
 
-/* Marcin napisał  */
 .client-list-link{
     display: flex;
     justify-content: center;
